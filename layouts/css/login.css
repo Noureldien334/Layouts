@@ -1,0 +1,100 @@
+body {
+	background: #e35869;
+	font-family: 'Rubik', sans-serif;
+	margin: 0;
+}
+.navbar ul {
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+}
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li {
+	float: left;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	margin-right: 40px;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+li a:hover:not(.active) {
+	background-color: #87CEEB;
+}
+.logdiv {
+	background: #fff;
+	width: 900px;
+	margin: 80px auto;
+	display: flex;
+	flex-direction: column;
+	border-radius: 25px;
+	box-shadow: 0 20px 25px rgba(0, 0, 0, 0.2);
+}
+button {
+	width: 15%;
+	border: none;
+	padding: 18px;
+	font-family: 'Rubik', sans-serif;
+	transition: all .3s;
+	border-radius: 12px;
+}
+input[type=text]i, input[type=password]:focus {
+	border: 3px solid #555;
+}
+input[type=text], input[type=password] {
+	width: 30%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+label {
+	font-weight: bold;
+	width: 150px;
+}
+.imgcontainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+.logimg {
+	border-radius: 50%;
+	width: 20%;
+}
+.limiter {
+	display: block;
+	text-align: center;
+	background-color: #555555;
+}
+.logdiv {
+	display: block;
+	background-color: #f1f1f1;
+}
+.container {
+	padding: 45px;
+	text-align: center;
+}
+label {
+	display: inline-block;
+	width: 100px;
+}
+.action {
+	margin-top: 20px;
+}
+h1 {
+	position: relative;
+}

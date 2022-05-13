@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="../css/register.css" rel="stylesheet">
+	<title></title>
+</head>
+<body>
+	<h1>Register</h1>
+	<form action="post">
+		<div class="regform">
+			<div class="container">
+				<label for="First name">First name</label> <input id="First name" name="usname" placeholder="First name" required="" type="text"> <label for="last name">Last name</label> <input id="last name" name="usname" placeholder="Last name" required="" type="text"><br>
+				<label for="countries">Country</label> <select class="count" id="contries" name="country">
+					<option value="Egypt">
+						Egypt
+					</option>
+					<option value="Uganda">
+						Uganda
+					</option>
+					<option value="Swaziland">
+						Swaziland
+					</option>
+					<option value="Sweden">
+						Sweden
+					</option>
+					<option value="St Kitts-Nevis">
+						St Kitts-Nevis
+					</option>
+					<option value="St Lucia">
+						St Lucia
+					</option>
+					<option value="St Maarten">
+						St Maarten
+					</option>
+					<option value="St Pierre & Miquelon">
+						St Pierre & Miquelon
+					</option>
+					<option value="St Vincent & Grenadines">
+						St Vincent & Grenadines
+					</option>
+				</select><br>
+				<label class="em" for="Email">Email</label> <input id="Email1" name="usname" pattern="[a-zA-Z]+@[a-zA-Z]+.com" placeholder="Retype-Email" required="" type="text"><br>
+				<label class="em" for="Email">Retype Email</label> <input id="Email2" name="usname" pattern="[a-zA-Z]+@[a-zA-Z]+.com" placeholder="Email" required="" type="text"><br>
+				<label class="pw" for="pswd">Password</label> <input id="pswd" placeholder="Password" type="password"> <label for="pswd1">Retype-Password</label> <input id="pswd1" placeholder="Password" type="password"><br>
+				<label class="mb" for="mobile">Mobile</label> <input id="mobile" name="usname" pattern="[0][1][0-9]{9}" placeholder="mobile" required="" type="tel"><br>
+				<label for="img">Profile picture</label> <input accept="image/*" id="img" name="img" type="file"><br>
+				<button type="submit">Register</button>
+			</div>
+		</div>
+	</form>
+</body>
+</html>

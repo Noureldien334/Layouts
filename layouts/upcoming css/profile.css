@@ -1,0 +1,29 @@
+body {
+  background: #e35869;
+  font-family: 'Rubik', sans-serif;
+}
+
+label { display: inline-block; padding: 40px;} 
+
+.container{
+  background: #fff;
+  width: 900px;
+  margin: 65px auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.2);
+  }
+
+button{
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  padding: 18px;
+  font-family: 'Rubik', sans-serif;
+  transition: all .3s;
+  left: -100px;
+ 
+ 
+  }
+
