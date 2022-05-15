@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <link href="../css/HomePage.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../images/favicon.png" rel="icon">
+</head>
+
+<body>
+    <script src="../Scripts/PostScript.js" >
+    </script>
+
+    <div class="navbar">
+        <div>
+                <img src="../images/navbar.png" class="imageResponsive">
+            <a href="https://www.facebook.com">
+            </a>
+
+        </div>
+        <a href="#home" class="x">Home</a>
+        <a href="#news" class="x">Profile</a>
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                    <div id=" requestsLists" class="y">
+                        <a href="https://www.qries.com/">
+                            <img height="100px" width="100px " src="../images/friendlist.png" id="profilePhoto">
+                        </a>
+                        <text>youssef ashraf</text>
+                    </br>
+                        <button> Confirm</button>
+                        <button> Reject</button>
+                    </div>        
+                    <hr>
+            </div>
+        </div>
+
+        <form class="example" action="action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+
+    <div class="posts" id="myForm2">
+            <input type="text" placeholder=" What is in your mind?" class="postText" onfocus="openForm()">
+            <img src="../images/friendlist.png" class="imgPost">
+    </div>
+
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+
+            <label for="post" class="postLabel"><b>Post</b></label>
+            <textarea onfocus="this.value=''"  placeholder="What is in your mind? " name="postTexts" required> </textarea>
+            <button type="Post" class="btn">Post</button>
+            <button type="Post" class="btn">Post</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
