@@ -1,0 +1,60 @@
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="~/Content/profile.css">
+    <title> Profile </title>
+    <link href="../images/profile.png" rel="icon">
+</head>
+<body>
+    <script src="~/Scripts/likeDislike.js"></script>
+    <div class="navbar">
+        <div>
+            <a href="https://www.facebook.com">
+                <img src="~/Images/navbar.png" class="imageResponsive">
+            </a>
+        </div>
+        <div class="x">
+            <a href="#home">Home</a>
+            <a href="#news">Profile</a>
+        </div>
+    </div>
+
+
+
+    <div class="pfimage">
+        <img src="~/images/friendlist.png" alt="profile picture" class="pp">
+        <h2> Joe </h2>
+    </div>
+
+
+    <div class="postDiv">
+        <div class="postIndividual" id="postInd">
+            <div class="">
+                <img src="../images/friendlist.png" class="imgPostInd">
+                <label for="user name" id="userLabel">Nour-eldien</label><br><br>
+                <textarea readonly id="postContent">  i am mr customize. i am in FCIH, Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,</textarea><br><br>
+            </div>
+            <div class="Postbtns">
+                <button id="likeColor" onclick="likeColor()">Like</button>
+                <button id="DislikeColor" onclick="dislikeColor()">Dislike</button>
+
+            </div>
+            <div class="writeComment">
+                <textarea placeholder="Write comment"></textarea>
+                <button id="Comment">Comment</button>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+
+</html>
