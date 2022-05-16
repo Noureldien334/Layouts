@@ -1,0 +1,93 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link href="~/Content/HomePage.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../images/favicon.png" rel="icon">
+</head>
+
+<body id="body">
+    <script src="~/Scripts/HomePage.js">
+    </script>
+
+    <div class="navbar">
+        <div>
+            <a href="https://www.facebook.com">
+                <img src="~/Images/navbar.png" class="imageResponsive">
+            </a>
+
+        </div>
+        <a href="#home" class="x">Home</a>
+        <a href="#news" class="x">Profile</a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                Dropdown
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <div id=" requestsLists" class="y">
+                    <a href="https://www.qries.com/">
+                        <img height="100" width="100 " src="../images/friendlist.png" id="profilePhoto">
+                    </a>
+                    <text>youssef ashraf</text>
+                    <br>
+                    <button> Confirm</button>
+                    <button> Reject</button>
+                </div>
+                <hr>
+            </div>
+        </div>
+
+        <form class="example" action="action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+
+    <div class="posts" id="myForm2">
+        <input type="text" placeholder=" What is in your mind?" class="postText" onfocus="openForm()">
+        <img src="../images/friendlist.png" class="imgPost">
+    </div>
+
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <label for="post" class="postLabel"><b>Post</b></label>
+            <textarea placeholder="What is in your mind? " name="postTexts"
+                      required></textarea>
+            <button class="btn">Post</button>
+            <button class="btn">Post</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <div class="postDiv">
+        <div class="postIndividual" id="postInd">
+            <div class="">
+                <img src="../images/friendlist.png" class="imgPostInd">
+                <label for="user name" id="userLabel">Nour-eldien</label><br><br>
+                <textarea readonly id="postContent">Hello, i am mr customize. i am in FCIH, Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,Hello, i am mr customize. i am in FCIH,</textarea><br><br>
+            </div>
+            <div class="Postbtns">
+                <button id="likeColor" onclick="likeColor()">Like</button>
+                <button id="DislikeColor" onclick="dislikeColor()">Dislike</button>
+
+            </div>
+            <div class="writeComment">
+                <textarea placeholder="Write comment"></textarea>
+                <button id="Comment">Comment</button>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
